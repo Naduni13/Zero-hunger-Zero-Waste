@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Zero Hunger</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: aliceblue;
+        }
+
+        .backVideo {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+
+        }
+
+        .img {
+            float: left;
+            padding-top: 10%;
+            padding-left: 20%;
+            width: 500px;
+            height: 500px;
+        }
+
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid rgb(74, 163, 10);
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .loadContainer {
+            position: relative;
+            display: flex;
+            margin-left: 10px;
+        }
+
+        .loaderContent {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .slogan {
+            margin-top: 15%;
+            height: 50%;
+            width: 30%;
+        }
+
+        .member {
+            margin-left: 25%;
+            color:rgb(201, 207, 201);
+            font-weight: bold;
+        }
+
+        .content {
+            position: fixed;
+        }
+    </style>
+    <meta http-equiv='refresh' content='4; URL=home.html'>
+</head>
+
+<body>
+    <video autoplay muted loop class="backVideo">
+        <source src="images/video.mp4" type="video/mp4">
+    </video>
+
+    <div class="content">
+        <div>
+            <img src="images/whiteLogo.png" alt="logo" class="img">
+        </div>
+        <div>
+            <img src="images/whitelogo2.png" alt="slogan" class="slogan">
+        </div>
+        <div class="loadContainer">
+            <div class="loader loadContainer"></div>
+            <div class="loadContainer">Loading please wait. </div>
+        </div>
+
+        <div class="member content">
+            <br><br>
+            <p>Naduni Peiris | Malsha Wanigasekara | Pahandi Samarasinghe</p>
+            <p>   w2054006   |      w2053494       |       w2052243      </p>
+        </div>
+    </div>
+
+</body>
+
+</html>

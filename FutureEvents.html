@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Future Events</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: antiquewhite;
+        }
+
+        .backgroundimg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .headContainer {
+            position: relative;
+        }
+
+        .heading {
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 160px;
+            font-weight: 500;
+            position: absolute;
+            top: 60px;
+            left: 500px;
+            text-align: center;
+        }
+
+        .ButtonDiv {
+            position: relative;
+            margin-top: 50px;
+            margin-left: 120px;
+            /* padding-left: 175px; */
+        }
+
+        .buyTickets {
+            background-color: #5f573d;
+            border: none;
+            color: rgb(235, 232, 193);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: block;
+            font-size: 20px;
+            font-weight: bolder;
+            margin: 10px 2px;
+            cursor: pointer;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(255, 254, 254, 0.1);
+        }
+
+        /* Change button color on hover */
+        .buyTickets:hover {
+            background-color: #b9a776;
+            color: #56534c;
+            /* Darker green */
+        }
+
+        .eventContainer {
+            background-color: #d6c796;
+            border-radius: 10px;
+            width: 1350px;
+            margin: 80px;
+            transition: box-shadow 0.3s ease;
+            /* Smooth transition effect */
+        }
+
+        .eventContainer:hover {
+            background-color: #b49158;
+            color: aliceblue;
+            box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.4);
+            /* Add shadow effect on hover */
+
+        }
+
+        .eventHeading {
+            text-align: center;
+            display: inline-block;
+            font-size: 30px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: bold;
+            padding-top: 50px;
+            padding-left: 100px;
+            position: absolute;
+        }
+
+        .eventimg {
+            display: inline-block;
+            width: 700px;
+            height: auto;
+            border-radius: 10px;
+            height: auto;
+        }
+
+        .eventDiscription {
+            margin-top: 30px;
+            width: 500px;
+            font-size: 20px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img src="images/futureEventsBackground.jpg" alt="Fure Events Background" class="backgroundimg">
+    <div class="headContainer"></div>
+    <div class="heading">
+        <div>OUR</div>
+        <div>FUTURE</div>
+        <div>EVENTS</div>
+
+    </div>
+    <!-- event 1 -->
+    <div class="eventContainer">
+        <img src="images/together.jpg" alt="Together Against Hunger" class="eventimg">
+        <div class="eventHeading">“Together Against Hunger” <br>Urges New Solutions to<br> End Growing Hunger Crisis
+            <div class="eventDiscription">As part of a new movement called Together Against Hunger, the summit attracted
+                more than 500 people across more than dozens of countries virtually and in person.</div>
+            <div class="eventDiscription">May 10, 2024
+
+                <div>Venue: Pavillion Cambon Capucines</div>
+                <div>Event starts at 8 am</div>
+                <div class="ButtonDiv">
+                    <button class="buyTickets" onclick="window.location.href='shop.html#event'">Buy Tickets Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- event 2 -->
+
+    <div class="eventContainer">
+        <img src="images/women.jpg" alt="Together Against Hunger" class="eventimg">
+        <div class="eventHeading">“The power of Women” <br>in the Fight of hunger<br>
+            <div class="eventDiscription">We work with women and girls to challenge the unjust social structures,
+                cultural
+                norms, and gender relations that drive hunger.Join us to learn more about how our programs create gender
+                equity and empower women to fight global hunger.</div>
+            <div class="eventDiscription">August 10, 2024
+
+                <div>Venue: Pavillion Cambon Capucines</div>
+                <div>Event starts at 8 am</div>
+                <div class="ButtonDiv">
+                    <button class="buyTickets" onclick="window.location.href='shop.html#event'">Buy Tickets Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="eventContainer">
+        <img src="images/innovationHunger.jpg" alt="Together Against Hunger" class="eventimg">
+        <div class="eventHeading">“Climate Smart Innovations” <br>in the Fight Against Hunger<br>
+            <div class="eventDiscription">Dedicated to showcasing and promoting innovative approaches aimed at combating
+                hunger while addressing the challenges posed by climate change. We focusing on sustainable agricultural
+                practices, resilient food systems, and technologies designed to mitigate the impact of climate change on
+                food security.</div>
+            <div class="eventDiscription">May 10, 2024
+
+                <div>Venue: Pavillion Cambon Capucines</div>
+                <div>Event starts at 8 am</div>
+                <div class="ButtonDiv">
+                    <button class="buyTickets" onclick="window.location.href='shop.html#event'">Buy Tickets Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- event 4 -->
+    <div class="eventContainer">
+        <img src="images/togetherA.jpeg" alt="Together Against Hunger" class="eventimg">
+        <div class="eventHeading">"Innovations to End Malnutrition” <br>Roger Thurow in Conversation with <br>Action
+            Against Hunger<br>
+            <div class="eventDiscription">For more than 40 years, Action Against Hunger has led the fight against
+                hunger. Our teams are on the frontlines, making immense progress against malnutrition and saving lives.
+                But now, with global hunger on the rise again, more innovation and bolder action is needed. </div>
+            <div class="eventDiscription">Spetember 23, 2024
+
+                <div>Venue: Pavillion Cambon Capucines</div>
+                <div>Event starts at 8 am</div>
+                <div class="ButtonDiv">
+                    <button class="buyTickets" onclick="window.location.href='shop.html#event'">Buy Tickets Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Profile</title>
+<link rel="stylesheet" href="Homestyle.css"/>
+<link rel="stylesheet" href="profilestyle.css">
+</head>
+<body>
+    <div>
+        <h1 class="logo">ZERO WASTE<br>ZERO HUNGER</h1>
+        <div class="image1">
+            <img src="images/logo_1.png" length="100" width="100">
+        </div>
+        
+        <div>
+            <nav class="topnav-right" >  <!--Navigation bar-->
+            <a href="home.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="profile.html">Sign In</a>
+            <a href="#info">Contact Us</a>
+            <a href="feedback.html">Feed Back</a>
+            </nav>
+        </div> 
+    </div>
+    <div class="container">
+        <button onclick="showPrompt()" class="start">CLICK HERE TO CREATE AN USER PROFILE</button>
+        <br><br>
+        <h4 class="h4">Profile Completion:<span id="completionOutput"></span></h4>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+             
+    </div>
+    <div class="container1">
+        <div>
+            Step 1<br>
+            <p class="h4">Name:&nbsp;<span id="nameOutput"></span> </p>
+            <p class="h4">Surname:&nbsp;<span id="surnameOutput"></span></p>
+            <p class="h4">Age:&nbsp;<span id="ageOutput"></span></p>
+            <p class="h4">Gender:&nbsp;<span id="genderOutput"></span></p>
+            <hr>
+        </div>
+        <div>
+            Step 2<br>
+            <p class="h4">Rational:&nbsp;<span id="rationalOutput"></span></p>
+            <p class="h4">Task:&nbsp;<span id="taskOutput"></span></p>
+            <p class="h4">Area:&nbsp;<span id="areaOutput"></span></p>
+            <hr>
+        </div>
+        <div>
+            Step 3<br><p class="h4">Area of Study:&nbsp;<span id="areaofstudyOutput"></span></p>
+            <p class="h4">Highest Degree:&nbsp;<span id="degreeOutput"></span></p>
+            <p class="h4">University Information:&nbsp;<span id="uniOutput"></span></p>
+            <p class="h4">Completion year:&nbsp;<span id="yearOutput"></span></p>
+            <hr>
+        </div>
+        <div>
+            Step 4<br>
+            <p class="h4">Tel:&nbsp;<span id="telOutput"></span></p>
+            <p class="h4">Email:&nbsp;<span id="emailOutput"></span></p>
+        </div>
+    </div>
+    <div class="cover">
+        <!-- Step 1: Personal Details -->
+        <div class="step" id="step1">
+            <div class="q" id="q1">
+                <div class="top">
+                    <h4 class="prompt">STEP 1 Personal details | Question 1/4<br>Enter your name:</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="nameInput" placeholder="Enter name">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(1, 1)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+            <div class="q" id="q2" style="display: none;">
+                <div class="top">
+                    <h4 class="prompt">STEP 1 Personal details | Question 2/4<br>Enter your surname:</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="surnameInput" placeholder="Enter surname">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(1, 2)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+            <div class="q" id="q3" style="display: none;">
+                <div class="top">
+                    <h4 class="prompt">STEP 1 Personal details | Question 3/4<br>Enter your Age:</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="ageInput" placeholder="Enter your Age">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(1, 3)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+            <div class="q" id="q4" style="display: none;">
+                <div class="top" >
+                    <h4 class="prompt">STEP 1 Personal details | Question 4/4<br>Enter your Gender:</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="genderInput">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(1, 4)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+        </div>
+        <!-- Step 2: volunteering tasks -->
+        <div class="step" id="step2">
+            <div class="q" id="q5">
+                <div class="top">
+                    <h4 class="prompt">STEP 2 volunteering tasks | Question 1/3<br>What brings you to this cause?:</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="rationalInput">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(2,5)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+            <div class="q" id="q6" style="display: none;">
+                <div class="top">
+                    <h4 class="prompt">STEP 2 volunteering tasks | Question 2/3<br>What is the task you are hoping to join for?:</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="taskInput">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(2, 6)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+            <div class="q" id="q7" style="display: none;">
+                <div class="top">
+                    <h4 class="prompt">STEP 2 volunteering tasks | Question 3/3<br>What area of the country you would like to choose?:</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="areaInput">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(2, 7)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+        </div>
+        <!-- Step 3:Qualifications-->
+        <div class="step" id="step3">
+            <div class="q" id="q8">
+                <div class="top">
+                    <h4 class="prompt">STEP 3 Qualifications | Question 1/4<br>Main field you study:</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="areaofstudyInput">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(3, 8)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+            <div class="q" id="q9" style="display: none;">
+                <div class="top">
+                    <h4 class="prompt">STEP 3 Qualifications | Question 2/4<br>Enter your highest degree (Diploma/Bachelors/Masters/PhD):</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="degreeInput">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(3, 9)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+            <div class="q" id="q10" style="display: none;">
+                <div class="top">
+                    <h4 class="prompt">STEP 3 Qualifications | Question 3/4<br>Enter your University :</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="uniInput">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(3, 10)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+            <div class="q" id="q11" style="display: none;">
+                <div class="top">
+                    <h4 class="prompt">STEP 3 Qualifications | Question 4/4<br>Enter the year you completed the degree:</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="yearInput">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(3, 11)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+        </div>
+        <!-- Step 4:Availability and contact -->
+        <div class="step" id="step4">
+            <div class="q" id="q12">
+                <div class="top">
+                    <h4 class="prompt">STEP 4 Availability and contact | Question 1/2<br>Enter your Telephone number:</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="telInput">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(4, 12)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+            <div class="q" id="q13" style="display: none;">
+                <div class="top">
+                    <h4 class="prompt">STEP 4 Availability and contact | Question 2/2<br>Enter your Email:</h4>
+                </div>
+                <div class="middle">
+                    <input type="text" id="emailInput">
+                </div>
+                <div class="bottom">
+                    <button class="next" onclick="next(4, 13)">Next</button>
+                    <button class="skip" onclick="skip()">Skip</button>
+                    <button class="back" onclick="back()">Back</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <footer class="footer">
+        <div class="copy">&copy;2024 Developers<div>
+        <div class="bottom-links">
+            <div class="infomation">
+                <span id="info"><u><a href="team.html">More infomationM</a></u></span><br><br>
+                 Tel    : 041-2254216<br>
+                 Mob    : 0742523714<br>
+                 E-mail : malshawanigasekara2001@gmail.com
+            </div><br>
+        
+        
+            <div class="editors">
+                <span><u>Page Editors</u></span><br><br>
+                <a href="Student1.html">Naduni</a><br>
+                <a href="Student2.html">Malsha</a><br>
+                <a href="Student_3.html">Pahandi</a>   
+            </div>    
+        </div>
+    <script>
+        let currentStep = 1;
+        let currentQuestion = 1;
+        let profileCompletion = 0;
+        answeredQuestion=1;
+        let userDetails = {
+            
+        };
+
+        function showPrompt(){
+            document.querySelector(".cover").style.display = "flex";
+            currentStep = 1;
+            currentQuestion = 1;
+            answeredQuestion=1;
+            showCurrentStep();
+        }
+
+        function next(step, question){
+            if(step === 1){
+                if(question === 1){
+                    let nameInput = document.getElementById("nameInput").value;
+                    if(nameInput.trim()===""){
+                        alert("please enter your name");
+                        return;
+                    }
+                    userDetails.name = nameInput;
+                    document.querySelector("#nameOutput").textContent = nameInput;
+                }
+                else if(question === 2){
+                    let surnameInput = document.getElementById("surnameInput").value;
+                    if(surnameInput.trim()===""){
+                        alert("please enter your surname");
+                        return;
+                    }
+                    userDetails.surname = surnameInput;
+                    document.querySelector("#surnameOutput").textContent = surnameInput;
+                }
+                else if(question === 3){
+                    let ageInput = document.getElementById("ageInput").value;
+                    if(ageInput.trim()===""){
+                        alert("please enter your age");
+                        return;
+                    }
+                    userDetails.age = ageInput;
+                    document.querySelector("#ageOutput").textContent = ageInput;
+                }
+                else if(question === 4){
+                    let genderInput = document.getElementById("genderInput").value;
+                    if(genderInput.trim()===""){
+                        alert("please enter your gender");
+                        return;
+                    }
+                    userDetails.gender = genderInput;
+                    document.querySelector("#genderOutput").textContent = genderInput;
+                }
+                
+            }
+            else if(step === 2){
+                if(question === 5){
+                    let rationalInput = document.getElementById("rationalInput").value;
+                    if(rationalInput.trim()===""){
+                        alert("answer the question");
+                        return;
+                    }
+                    userDetails.rational = rationalInput;
+                    document.querySelector("#rationalOutput").textContent = rationalInput;
+                }
+                else if(question === 6){
+                    let taskInput = document.getElementById("taskInput").value;
+                    if(taskInput.trim()===""){
+                        alert("answer the question");
+                        return;
+                    }
+                    userDetails.task = taskInput;
+                    document.querySelector("#taskOutput").textContent = taskInput;
+                }
+                else if(question === 7){
+                    let areaInput = document.getElementById("areaInput").value;
+                    if(areaInput.trim()===""){
+                        alert("answer the question");
+                        return;
+                    }
+                    userDetails.area = areaInput;
+                    document.querySelector("#areaOutput").textContent = areaInput;
+                }
+            }
+            else if(step === 3){
+                if(question === 8){
+                    let areaofstudyInput = document.getElementById("areaofstudyInput").value;
+                    if(areaofstudyInput.trim()===""){
+                        alert("answer the question");
+                        return;
+                    }
+                    userDetails.areaofstudy = areaofstudyInput;
+                    document.querySelector("#areaofstudyOutput").textContent = areaofstudyInput;
+                }
+                else if(question === 9){
+                    let degreeInput = document.getElementById("degreeInput").value;
+                    if(degreeInput.trim()===""){
+                        alert("answer the question");
+                        return;
+                    }
+                    userDetails.degree = degreeInput;
+                    document.querySelector("#degreeOutput").textContent = degreeInput;
+                }
+                else if(question === 10){
+                    let uniInput = document.getElementById("uniInput").value;
+                    if(uniInput.trim()===""){
+                        alert("answer the question");
+                        return;
+                    }
+                    userDetails.uni = uniInput;
+                    document.querySelector("#uniOutput").textContent = uniInput;
+                }
+                else if(question === 11){
+                    let yearInput = document.getElementById("yearInput").value;
+                    if(yearInput.trim()===""){
+                        alert("answer the question");
+                        return;
+                    }
+                    userDetails.year = yearInput;
+                    document.querySelector("#yearOutput").textContent = yearInput;
+                }
+                
+            }
+            else if(step === 4){
+                if(question === 12){
+                    let telInput = document.getElementById("telInput").value;
+                    if(telInput.trim()===""){
+                        alert("Enter Telephone ");
+                        return;
+                    }
+                    userDetails.tel = telInput;
+                    document.querySelector("#telOutput").textContent = telInput;
+                }
+                else if(question === 13){
+                    let emailInput = document.getElementById("emailInput").value;
+                    if(emailInput.trim()===""){
+                        alert("answer the question");
+                        return;
+                    }
+                    userDetails.email = emailInput;
+                    document.querySelector("#emailOutput").textContent = emailInput;
+                }
+            }
+            
+            updateProfileCompletion();
+            currentQuestion++;
+            answeredQuestion++;
+            showCurrentStep();
+            if(currentQuestion === 14) {
+                document.querySelector(".cover").style.display = "none";
+            }
+        }
+        function back(){
+            if(currentQuestion > 1){
+                currentQuestion--;
+                showCurrentStep();
+            }
+        }
+
+        function skip(){
+            currentQuestion++;
+            showCurrentStep();
+        }
+
+        function showCurrentStep(){
+            let questions = document.querySelectorAll(".q");
+            questions.forEach((questionElement, index) => {
+                if(index === currentQuestion - 1){
+                    questionElement.style.display = "block";
+                    document.getElementById('q'+currentQuestion).scrollIntoView();
+                }
+                else{
+                    questionElement.style.display = "none";
+                }
+            });
+            if (currentQuestion === questions.length) {
+                document.querySelector(".next").disabled = true;
+            } else {
+                document.querySelector(".next").disabled = false;
+            }
+        }
+
+        function updateProfileCompletion(){
+            totalQuestions = 13;
+            profileCompletion = Math.floor(((answeredQuestion) / totalQuestions) * 100);
+            document.querySelector("#completionOutput").textContent = profileCompletion + "%";
+
+            let progressBar = document.querySelector(".progress");
+            progressBar.style.width = profileCompletion + "%";
+
+            if (profileCompletion === 100) {
+                document.querySelector(".cover").style.display = "none";
+                document.querySelector(".container").style.display = "none";
+                document.querySelector(".container1").style.display = "flex";
+                document.querySelector("footer").style.display="none";
+            }    
+        }
+  
+    </script>
+</body>
+</html>
+
+

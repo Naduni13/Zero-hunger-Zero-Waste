@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Final Checkout</title>
+  <link rel="stylesheet" href="HomeStyles.css">
+  <style>
+    body {
+      background-color: antiquewhite;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .formLegend {
+      background-color: rgb(163, 109, 39);
+      color: aliceblue;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .formBackground {
+      background-color: rgb(222, 193, 155);
+      border-radius: 10px;
+      font-size: 17px;
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+        sans-serif;
+      width: 60%;
+    }
+
+    .formContent {
+      padding: 20px;
+    }
+
+    .formButtons {
+      background-color: #5e4e18;
+      padding: 5px;
+      color: rgb(215, 207, 153);
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(255, 254, 254, 0.1);
+    }
+
+    .formButtons:hover {
+      background-color: rgb(177, 150, 114);
+      color: #5e4e18;
+    }
+
+    sup {
+      color: red;
+    }
+
+    .formDiv {
+      padding: 50px;
+    }
+
+    .heading {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 50px;
+      text-align: center;
+      padding-top: 200px;
+    }
+
+    .subheading {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 20px;
+      text-align: center;
+      padding-top: 10px;
+    }
+
+
+
+    .checkoutBox {
+      margin-left: 60px;
+      width: 450px;
+      background-color: #7a682b;
+      color: aliceblue;
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    #referenceNo {
+      padding: 10px;
+      font-size: 15px;
+    }
+
+    #totalPrice {
+      padding: 10px;
+      font-size: 20px;
+    }
+
+    .checkoutHeading {
+      background-color: #a59f8c;
+    }
+
+    .placeOrder {
+      background-color: #e5d08b;
+      border: none;
+      color: rgb(108, 82, 26);
+      padding: 15px 32px;
+      text-align: center;
+      display: block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      float: right;
+    }
+
+    .placeOrder:hover {
+      background-color: #9b7c26;
+      color: #e6d3a2;
+
+    }
+
+    .ButtonDiv {
+      padding-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav-logo">
+    <h1 class="logo">ZERO WASTE<br>ZERO HUNGER</h1>
+    <div class="image1"><img src="images/logo_1.png" length="100" width="100"></div>
+
+    <div>
+      <nav class="topnav-right" >  <!--Navigation bar-->
+      <a href="home.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="profile.html">Sign In</a>
+      <a href="#info">Contact Us</a>
+      <a href="feedback.html">Feed Back</a>
+      </nav>
+  </div> 
+
+  </div>
+  <div class="heading">Almost There
+    <p class="subheading">Filling the details below to complete your purchase</p>
+  </div>
+
+
+
+  <div class="formDiv">
+    <div class="container">
+      <form class="formBackground" name="paymentForm" onsubmit="return validatePaymentForm()">
+        <legend class="formLegend">Payment Information</legend>
+
+        <div class="formContent">
+          <lable for="CardNumber">Card Number<sup>*</sup>:</lable>
+          <input type="number" id="CardNumber" name="CardNumber" placeholder="Enter Card Number" multiple required />
+          <br /><br />
+          <lable for="CardHolderName">Cardholder Name<sup>*</sup>:</lable>
+          <input type="text" id="CardHolderName" name="CardHolderName" placeholder="Enter Card Holder's Name"
+            required />
+          <br /><br />
+          <lable for="ExpiryDate">Expiry Date<sup>*</sup>:</lable>
+          <input type="date" required />
+          <br /><br />
+          <lable type="number" id="ccv">CCV<sup>*</sup>:</lable>
+          <input type="number" id="ccv" name="ccv" multiple required />
+          <br><br>
+          <input type="reset" value="Clear Fields" class="formButtons">
+          <input type="submit" value="Save Changes" class="formButtons">
+        </div>
+      </form>
+      <div class="checkoutBox">
+        <h1>Checkout</h1>
+        <div id="referenceNo">
+        </div>
+        <div id="totalPrice"></div>
+
+        <div class="ButtonDiv">
+          <button class="placeOrder" onclick="window.location.href='OrderSuccess.html'">Place Order</button>
+        </div>
+
+      </div>
+    </div>
+    <br><br>
+    <form class="formBackground" name="ShippingForm" onsubmit="return validateShippingForm()">
+      <legend class="formLegend">Shipping Address</legend>
+      <div class="formContent">
+        <lable for="Address1">Address Line 1<sup>*</sup>:</lable>
+        <input type="text" id="Address1" name="Address1" required>
+        <br><br>
+        <lable for="Address2">Address Line 2<sup>*</sup>:</lable>
+        <input type="text" id="Address1" name="Address1" required>
+        <br><br>
+        <lable for="Address3">Address Line 3:</lable>
+        <input type="text" id="Address1" name="Address1">
+        <br><br>
+        <lable for="city">City<sup>*</sup>:</lable>
+        <input type="text" id="city" name="city" required>
+        <br><br>
+        <lable for="state">State<sup>*</sup>:</lable>
+        <input type="text" id="state" name="state" required>
+        <br><br>
+        <lable for="zipCode">Zip code<sup>*</sup>:</lable>
+        <input type="number" id="zipCode" name="zipCode" required>
+        <br><br>
+        <label>Country<sup>*</sup></label>
+        <select name="country" id="country" required>
+          <option value="SriLanka">Sri Lanka</option>
+          <option value="US">United States</option>
+          <option value="UK">United Kingdom</option>
+          <option value="India">India</option>
+          <option value="China">China</option>
+          <option value="SouthKorea">South Korea</option>
+        </select>
+        <br><br>
+        <input type="reset" value="Clear Fields" class="formButtons">
+        <input type="submit" value="Save Changes" class="formButtons">
+      </div>
+    </form>
+
+    <br><br>
+    <form class="formBackground" name="ContactForm" onsubmit="return validateContactForm()">
+      <legend class="formLegend">Contact Details</legend>
+      <div class="formContent">
+        <label for="Fname">First Name<sup>*</sup>:</label>
+        <input type="text" id="Fname" name="Fname" required>
+        <br><br>
+        <label for="Sname">Surname<sup>*</sup>:</label>
+        <input type="text" id="Sname" name="Sname" required>
+        <br><br>
+        <lable for="PhoneNUmber">Phone Number<sup>*</sup>:</lable>
+        <input type="number" id="PhoneNUmber" name="PhoneNUmber" multiple required>
+        <br><br>
+        <label for="email">Email Address<sup>*</sup>:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        <input type="reset" value="Clear Fields" class="formButtons">
+        <input type="submit" value="Save Changes" class="formButtons">
+
+      </div>
+    </form>
+  </div>
+  <footer class="footer">
+    <div class="copy">&copy;2024 Developers<div>
+        <div class="bottom-links">
+          <div class="infomation">
+            <span id="info"><u><a href="team.html">More infomationM</a></u></span><br><br>
+            Tel : 041-2254216<br>
+            Mob : 0742523714<br>
+            E-mail : malshawanigasekara2001@gmail.com
+          </div><br>
+
+
+          <div class="editors">
+            <span><u>Page Editors</u></span><br><br>
+            <a href="Student1.html">Naduni</a><br>
+            <a href="Student2.html">Malsha</a><br>
+            <a href="Student_3.html">Pahandi</a>
+          </div>
+        </div>
+
+
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function () {
+            const urlParams = new URLSearchParams(window.location.search);
+            const totalPrice = urlParams.get('total');
+            document.getElementById('totalPrice').textContent = `Total Price: $${totalPrice}`;
+          });
+
+
+          // Define the range
+          var min = 999999; // Minimum value
+          var max = 9999999; // Maximum value
+
+          // Generate a random number within the range
+          var referenceNo = Math.floor(Math.random() * (max - min + 1)) + min;
+
+          // Display the random number within the specified div
+          document.getElementById("referenceNo").textContent = "Reference No: #" + referenceNo;
+          // }
+
+          //validations
+          function validatePaymentForm() {
+            var cardHolderName = document.getElementById("CardHolderName").value;
+            if (!(/^[a-zA-Z\s]*$/.test(cardHolderName))) {
+              alert("Please enter a valid Cardholder Name (only letters and spaces).");
+              return false;
+            }
+
+
+            return true;
+          }
+
+          function validateShippingForm() {
+            // City validation
+            var city = document.getElementById("city").value;
+            if (!(/^[a-zA-Z\s]*$/.test(city))) {
+              alert("Please enter a valid City (only letters).");
+              return false;
+            }
+
+            // City validation
+            var state = document.getElementById("state").value;
+            if (!(/^[a-zA-Z\s]*$/.test(state))) {
+              alert("Please enter a valid State (only letters).");
+              return false;
+            }
+            return true;
+          }
+
+          function validateContactForm() {
+            var Fname = document.getElementById("Fname").value;
+            if (!(/^[a-zA-Z\s]*$/.test(Fname))) {
+              alert("Please enter a valid First Name (only letters and spaces).");
+              return false;
+            }
+
+            var Sname = document.getElementById("Sname").value;
+            if (!(/^[a-zA-Z\s]*$/.test(Sname))) {
+              alert("Please enter a valid  Surname (only letters and spaces).");
+              return false;
+            }
+
+            return true;
+          }
+
+
+
+        </script>
+</body>
+
+</html>

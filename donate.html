@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Fight Hunger Today</title>
+    <link rel="stylesheet" href="Homestyle.css"/>
+    <link rel="stylesheet" href="Donatestyle.css">
+</head>
+<body id="donatebody">
+    <div>
+        <h1 class="logo">ZERO WASTE<br>ZERO HUNGER</h1>
+        <div class="image1">
+            <img src="images/logo_1.png" length="100" width="100">
+        </div>
+        
+        <div>
+            <nav class="topnav-right" >  <!--Navigation bar-->
+            <a href="home.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="profile.html">Sign In</a>
+            <a href="#info">Contact Us</a>
+            <a href="feedback.html">Feed Back</a>
+            </nav>
+        </div> 
+    </div>
+    <h1>Help Fight Hunger - Donate Today</h1>
+    
+    <div class="content">
+        <div class="donation-information">
+            <h2>Your Donation Will Help...</h2>
+            <p>Every donation, big or small, makes a significant impact. Here's how your contribution helps:</p>
+            <ul>
+                <li>Provide meals to families in need.</li>
+                <li>Support local food banks and pantries.</li>
+                <li>Advocate for food security policies.</li>
+            </ul>
+        </div>
+        <br><br><br><br>
+        <div class="donation-options">
+            <h2>Make a Difference - Choose Your Donation Amount</h2>
+            <div class="donation-buttons">
+                <button onclick="showAlert('$10')">Donate $10</button>
+                <button onclick="showAlert('$25')">Donate $25</button>
+                <button onclick="showAlert('$50')">Donate $50</button>
+                <button onclick="showAlert('Other Amount')">Other Amount</button>
+            </div>
+            <div class="other-amount">
+                <label for="amount">Enter a different amount:</label>
+                <input type="number" id="amount" min="1" placeholder="Enter amount here">
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="donate-form">
+            <h2>Donate Securely Now</h2>
+            <form id="donation-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+                <label for="payment">Payment Method:</label>
+                <select id="payment">
+                    <option value="credit_card">Credit Card</option>
+                    <option value="debit_card">Debit Card</option>
+                    <option value="paypal">PayPal</option>
+                </select>
+                <p>**Note:** Due to security limitations, online payment processing is not available on this page.  We recommend contacting us at <a href="mailto:donate@yourorganization.com">donate@yourorganization.com</a> to complete your secure donation.</p>
+                <button type="submit" onclick="submitDonation()">Submit Donation Information</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="copy">&copy;2024 Developers<div>
+        <div class="bottom-links">
+            <div class="bottom-links">
+                <div class="infomation">
+                    <span id="info"><u><a href="team.html">More infomationM</a></u></span><br><br>
+                     Tel    : 041-2254216<br>
+                     Mob    : 0742523714<br>
+                     E-mail : malshawanigasekara2001@gmail.com
+                </div><br>
+            
+                <div class="editors">
+                    <span><u>Page Editors</u></span><br><br>
+                    <a href="Student1.html">Naduni</a><br>
+                    <a href="Student2.html">Malsha</a><br>
+                    <a href="Student_3.html">Pahandi</a>   
+                </div>     
+            </div>   
+        </div>
+    <script>
+        // Function to submit donation information
+        function submitDonation() {
+            let name = document.getElementById('name').value;
+            let email = document.getElementById('email').value;
+            let amount = document.getElementById('amount').value || document.querySelector('.donation-buttons button:focus-visible').textContent.slice(1);
+            let payment = document.getElementById('payment').value;
+            alert(`Thank you, ${name}, for your interest in donating! We received your donation information:\nEmail: ${email}\nAmount: ${amount}\nPayment Method: ${payment}\n\nPlease contact us at donate@yourorganization.com to finalize your secure donation.`);
+        }
+        
+        // Function to add event listener to the submit button
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('submit-button').addEventListener('click', submitDonation);
+        });
+        
+        // Function to show alert when donation button is clicked
+        function showAlert(amount) {
+            alert(`You have selected to donate ${amount}`);
+        }
+    </script>
+    
+</body>
+</html>
+

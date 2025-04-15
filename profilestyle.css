@@ -1,0 +1,75 @@
+body {
+    background-image:url(images/profile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    .cover{
+        background-color: rgba(255, 255, 255, 0.3);
+        position: absolute;
+        top: 80%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        display: none;
+        flex-direction: column;
+        border: 0.7px solid rgb(98,98,98);
+        border-radius: 10px;
+        padding: 7px;
+        width: 50%;
+    }
+    .container{
+        background-color: rgba(255, 255, 255, 0.0);
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .container1{
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: none;
+        flex-direction: column;
+        
+    }
+    .prompt{
+        margin: 0;
+        font-family: cursive;
+        color: white;
+    }
+    .top{
+        display: flex;
+        margin-bottom: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+    .middle{
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    .bottom{
+        display: flex;
+        justify-content: end;
+    }
+    .cancel{
+        margin-left: 10px;
+    }
+    .progress-bar {
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    }
+
+    .progress {
+        height: 100%;
+        width: 0;
+        background-color: #007bff;
+        border-radius: 10px;
+    }
+    hr{
+       border-top:7px solid #4b0909;
+    }

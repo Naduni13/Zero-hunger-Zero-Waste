@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Restaurant</title>
+  <link rel="stylesheet" href="Homestyle.css">
+  <link rel="stylesheet" href="shopStyle.css">
+</head>
+
+<body>
+  <div class="nav-logo">
+    <h1 class="logo">ZERO WASTE<br>ZERO HUNGER</h1>
+    <div class="image1">
+      <img src="images/logo_1.png" alt="logo" height="100px" width="100px">
+    </div>
+
+    <div>
+      <nav class="topnav-right"> <!--Navigation bar-->
+        <a href="home.html">Home</a>
+        <a href="shop.html">Shop</a>
+        <a href="profile.html">Sign In</a>
+        <a href="#info">Contact Us</a>
+        <a href="feedback.html">Feed Back</a>
+      </nav>
+    </div>
+  </div>
+  <div>
+    <div class="container">
+      <img src="images/cookie2.jpg" alt="cookie" class="startBackground">
+      <!-- Every meal sold is a step closer to ending hunger. Join us in the fight against hunger, one bite at a time -->
+      <div class="heading">
+        <div class="topheading">Help Fight Hunger</div>
+        <div class="secondHeading">Every meal you buy,</div>
+        <div class="thirdHeading">
+          supports our mission<br>
+          to end hunger.
+        </div>
+        <div class="shopButtonDiv">
+          <button class="shopButton" onclick="document.getElementById('navi').scrollIntoView()">
+            Buy Now
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="navbar" id="navi">
+      <div>
+        <a href="#cart"><img src="images/viewCart.png" class="cartimg" alt="ViewCart"></a>
+      </div>
+      <br>
+      <a href="#cookies">Cookies</a>
+      <a href="#Merchandise">Merchandise</a>
+      <a href="#event">Event Tickets</a>
+      <a href="#contact">Contact</a>
+      <br>
+      <br>
+    </div>
+
+    <div class="subHeading" id="cookies">Cookies</div>
+    <div class="option">
+      <label><input type="checkbox" class="filter-checkbox" value="Cheesecake Cookies">
+        Cheesecake Cookie</label>
+      <label>
+        <input type="checkbox" class="filter-checkbox" value="Chocolate-Chip Cookies">
+        Chocolate-Chip Cookies</label>
+      <label><input type="checkbox" class="filter-checkbox" value="Desert Cookies">
+        Desert Cookies</label>
+    </div>
+    <div class="productRow">
+      <div class="product" data-product="Raspberry Cheesecake cookies" data-price="6.00"
+        data-category="Cheesecake Cookies">
+        <img src="images/rasChee.jpeg" alt="RASPBERRY CHEESECAKE COOKIES" class="productimg">
+        <div class="description">
+          <p>Raspberry Cheesecake Cookies</p>
+          <p class="price">Price $6</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+      <div class="product" data-product="Pumpkin Cheesecake Cookies" data-price="6.00"
+        data-category="Cheesecake Cookies">
+        <img src="images/pumpkinCheese.jpg" alt="SNICKERDOODLE PUMPKIN CHEESECAKE COOKIES" class="productimg">
+        <div class="description">
+          <p>Pumpkin Cheesecake Cookies</p>
+          <p class="price">Price $6</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Strawberry Cheesecake Cookies" data-price="7.00"
+        data-category="Cheesecake Cookies">
+        <img src="images/strawberryCheesecake.jpg" alt="STRAWBERRY CHEESECAKE COOKIES" class="productimg">
+        <div class="description">
+          <p>Strawberry Cheesecake Cookies</p>
+          <p class="price">Price $7</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Redvelvert Cheesecake Cookies" data-price="7.00"
+        data-category="Cheesecake Cookies">
+        <img src="images/redvelvertCheesecake.jpg" alt="REDVELVET CHEESECAKE COOKIES" class="productimg">
+        <div class="description">
+          <p>Redvelvet Cheesecake Cookies</p>
+          <p class="price">Price $7</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+
+
+
+    </div>
+    <!--End of first product row-->
+    <!-- second row -->
+    <div class="productRow">
+      <div class="product" data-product=" Tiramisu Cookies" data-price="6.00" data-category="Desert Cookies">
+        <img src="images/tiramusucookie.jpg" alt="TIRAMISU COOKIES" class="productimg">
+        <div class="description">
+          <p>Tiramisu Cookies</p>
+          <p class="price">Price $6</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="White Chocolate Matcha Cookies" data-price="5.00"
+        data-category="Desert Cookies">
+        <img src="images/matchachip.jpg" alt="WHITE CHOCOLATE MATCHA COOKIES" class="productimg">
+        <div class="description">
+          <p>White Chocolate Matcha Cookies</p>
+          <p class="price">Price $5</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Oatmeal Craisin Cookies" data-price="5.00" data-category="Desert Cookies">
+        <img src="images/oatsChip.jpg" alt="OATMEAL CRAISIN COOKIES" class="productimg">
+        <div class="description">
+          <p>Oatmeal Craisin Cookies</p>
+          <p class="price">Price $5</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Biscoff Butter Cookies" data-price="7.00" data-category="Desert Cookies">
+        <img src="images/Biscoff.jpg" alt="BISCOFF BUTTER COOKIES" class="productimg">
+        <div class="description">
+          <p>Biscoff Butter Cookies</p>
+          <p class="price">Price $7</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of second -->
+    <!-- 3rd row -->
+    <div class="productRow">
+      <div class="product" data-product=" Sour cream Cookies" data-price="4.00" data-category="Desert Cookies">
+        <img src="images/cream.jpg" alt="SOUR CREAM COOKIES" class="productimg">
+        <div class="description">
+          <p>Sour cream Cookies</p>
+          <p class="price">Price $4</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product=" Easter Egg Cookies" data-price="5.00" data-category="Desert Cookies">
+        <img src="images/easter.jpg" alt="EASTER EGG COOKIES" class="productimg">
+        <div class="description">
+          <p>Easter Egg Cookies</p>
+          <p class="price">Price $5</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Almond Peanut Butter Cookies" data-price="5.00" data-category="Desert Cookies">
+        <img src="images/almond.jpg" alt=" ALMOND FLOUR PEANUT BUTTER COOKIES" class="productimg">
+        <div class="description">
+          <p>Almond Peanut Butter Cookies</p>
+          <p class="price">Price $5</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Raspberry Pistachio Cookies" data-price="6.00" data-category="Desert Cookies">
+        <img src="images/pistachio.jpg" alt="RASPBERRY PISTACHIO COOKIES" class="productimg">
+        <div class="description">
+          <p>Raspberry Pistachio Cookies</p>
+          <p class="price">Price $6</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of 3rd row -->
+    <!-- 4th row -->
+    <div class="productRow">
+      <div class="product" data-product="Double Chocolate Chip Cookies " data-price="5.00"
+        data-category="Chocolate-Chip Cookies">
+        <img src="images/doubleChip.jpeg" alt="DOUBLE CHOCOLATE CHIP COOKIES" class="productimg">
+        <div class="description">
+          <p>Double Chocolate Chip Cookies</p>
+          <p class="price">Price $5</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Chocolate Chip Walnut Cookies " data-price="5.00"
+        data-category="Chocolate-Chip Cookies">
+        <img src="images/chocoAlmond.jpg" alt="CHOCOLATE CHIP WALNUT COOKIES" class="productimg">
+        <div class="description">
+          <p>Chocolate Chip Walnut Cookies</p>
+          <p class="price">Price $5</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Chocolate Chip Cookies" data-price="5.00"
+        data-category="Chocolate-Chip Cookies">
+        <img src="images/chocChip.jpg" alt="CHOCLATE CHIP COOKIES" class="productimg">
+        <div class="description">
+          <p>Chocolate Chip Cookies</p>
+          <p class="price">Price $5</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Chocolate Chip Cookies" data-price="5.00"
+        data-category="Chocolate-Chip Cookies">
+        <img src="images/chicChipW.jpg" alt="CHOCOLATE CHIP COOKIES WITHOUT BROWN SUGAR" class="productimg">
+        <div class="description">
+          <p>
+            Chocolate Chip Cookies <br>
+            (Without Brown Sugar)
+          </p>
+          <p class="price">Price $5</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- end of 4th row -->
+
+    <div class="subHeading" id="Merchandise">Hoodies & Caps</div>
+    <div class="option">
+      <label><input type="checkbox" class="filter-checkbox" value="Hoodies">
+        Hoodies</label>
+      <label><input type="checkbox" class="filter-checkbox" value="Caps">
+        Caps</label>
+      <!-- <label><input type="checkbox" class="filter-checkbox" value="Desert Cookies"> Desert Cookies</label> -->
+    </div>
+    <div class="productRow">
+      <div class="product" data-product="Red Hoodie" data-price="25.00" data-category="Hoodies">
+        <img src="images/redH.jpeg" alt="Red hoodie" class="productimg">
+        <div class="description">
+          <p>Red Hoodie</p>
+          <p class="price">Price $25</p>
+        </div>
+        <div class="HoddieSize">
+          <label>Size :<sup>*</sup></label>
+          <select name="country">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Brown Hoodie" data-price="25.00" data-category="Hoodies">
+        <img src="images/brownH.jpeg" alt="Brown Hoodie" class="productimg">
+        <div class="description">
+          <p>Brown Hoodie</p>
+          <p class="price">Price $25</p>
+        </div>
+        <div class="HoddieSize">
+          <label>Size :<sup>*</sup></label>
+          <select name="country2">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Fern Green Hoodie" data-price="25.00" data-category="Hoodies">
+        <img src="images/FernGreenH.jpeg" alt="Fern green hoodie" class="productimg">
+        <div class="description">
+          <p>Fern Green Hoodie</p>
+          <p class="price">Price $25</p>
+        </div>
+        <div class="HoddieSize">
+          <label>Size :<sup>*</sup></label>
+          <select name="country">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Yellow Hoodie" data-price="25.00" data-category="Hoodies">
+        <img src="images/Yellow.jpeg" alt="yellow hoodie" class="productimg">
+        <div class="description">
+          <p>Yellow Hoodie</p>
+          <p class="price">Price $25</p>
+        </div>
+        <div class="HoddieSize">
+          <label>Size :<sup>*</sup></label>
+          <select name="country">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- End of first row -->
+    <div class="productRow">
+      <div class="product" data-product="Artichoke Green Hoodie" data-price="25.00" data-category="Hoodies">
+        <img src="images/ArtichokegreenH.jpeg" alt="Artichoke green hoodie" class="productimg">
+        <div class="description">
+          <p>Artichoke Green Hoodie</p>
+          <p class="price">Price $25</p>
+        </div>
+        <div class="HoddieSize">
+          <label>Size :<sup>*</sup></label>
+          <select name="country">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Purple Hoodie" data-price="25.00" data-category="Hoodies">
+        <img src="images/purpleH.jpeg" alt="purple Hoodie" class="productimg">
+        <div class="description">
+          <p>Purple Hoodie</p>
+          <p class="price">Price $25</p>
+        </div>
+        <div class="HoddieSize">
+          <label>Size :<sup>*</sup></label>
+          <select name="country">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Coffee Hoodie" data-price="25.00" data-category="Hoodies">
+        <img src="images/brwnish.jpeg" alt="coffee hoodie" class="productimg">
+        <div class="description">
+          <p>Coffee Hoodie</p>
+          <p class="price">Price $25</p>
+        </div>
+        <div class="HoddieSize">
+          <label>Size :<sup>*</sup></label>
+          <select name="country">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Orange Hoodie" data-price="25.00" data-category="Hoodies">
+        <img src="images/OrangeH.jpeg" alt="Orange hoodie" class="productimg">
+        <div class="description">
+          <p>Orange Hoodie</p>
+          <p class="price">Price $25</p>
+        </div>
+        <div class="HoddieSize">
+          <label>Size :<sup>*</sup></label>
+          <select name="country">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+      <!-- End of seconf row -->
+    </div>
+
+    <div class="productRow">
+      <div class="product" data-product="White-Black Hat" data-price="15.00" data-category="Caps">
+        <img src="images/whiteHat.jpeg" alt="white Hat" class="productimg">
+        <div class="description">
+          <p>White-Black Hat</p>
+          <p class="price">Price $15</p>
+        </div>
+        <div class="HoddieSize">
+          <label>Size :<sup>*</sup></label>
+          <select name="country">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Black-gold Hat" data-price="15.00" data-category="Caps">
+        <img src="images/blackGoldHat.jpeg" alt="black gold Hat" class="productimg">
+        <div class="description">
+          <p>Black-gold Hat</p>
+          <p class="price">Price $15</p>
+        </div>
+        <div class="HoddieSize">
+          <label>Size :<sup>*</sup></label>
+          <select name="country">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Black-pink Hat" data-price="15.00" data-category="Caps">
+        <img src="images/blackHat.jpeg" alt="Black pink hat" class="productimg">
+        <div class="description">
+          <p>Black-pink Hat</p>
+          <p class="price">Price $15</p>
+        </div>
+        <div class="HoddieSize">
+          <label>Size :<sup>*</sup></label>
+          <select name="country">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Cyan-White Hat" data-price="15.00" data-category="Caps">
+        <img src="images/blueHad.jpeg" alt="Cyan hat" class="productimg">
+        <div class="description">
+          <p>Cyan-White Hat</p>
+          <p class="price">Price $15</p>
+        </div>
+        <div class="HoddieSize">
+          <label>Size :<sup>*</sup></label>
+          <select name="country">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+      <!-- End of seconf row -->
+    </div>
+    <!-- Event tickets -->
+    <div class="subHeading" id="event">Event Tickets<span class="LearnMore"><a href="FutureEvents.html">(Learn
+          more)</a></span></div>
+    <div class="productRow">
+      <div class="product" data-product="Together against hunger Ticket" data-price="20.00">
+        <img src="images/togetherTicket.jpg" alt="together against hunger" class="productimg">
+        <div class="description">
+          <p>Together against hunger<br>May 10, 2024</p>
+          <p class="price">Price $20</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="The Power of Women Ticket" data-price="20.00">
+        <img src="images/WomanTicket.jpg" alt="woman against hunger" class="productimg">
+        <div class="description">
+          <p>
+            The Power of Women<br>
+            in the Fight Against Hunger<br>Aug 10, 2024
+          </p>
+          <p class="price" style="margin-top: -10px">Price $20</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Innovations to End Malnutrition Ticket" data-price="15.00">
+        <img src="images/innovation.jpg" alt="innovation against hunger" class="productimg">
+        <div class="description">
+          <p>Innovations to End Malnutrition<br>Sep 23, 2024</p>
+          <p class="price" style="margin-top: -10px">Price $15</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+
+      <div class="product" data-product="Climate Smart Innovations Ticket" data-price="15.00">
+        <img src="images/teaTicket.jpg" alt="innovation against hunger" class="productimg">
+        <div class="description">
+          <p>
+            Climate Smart Innovations<br>
+            in the Fight Against Hunger<br>Dec 14, 2024
+          </p>
+          <p class="price" style="margin-top: -10px">Price $15</p>
+        </div>
+        <div class="increase-decrease">
+          <div>
+            <button class="quantity-btn" data-action="decrease">-</button>
+          </div>
+          <span class="quantity">1</span>
+          <div>
+            <button class="quantity-btn" data-action="increase">+</button>
+          </div>
+        </div>
+        <div class="ButtonDiv">
+          <button class="AddCartButton">Add to cart</button>
+        </div>
+      </div>
+    </div>
+    <!-- cart -->
+
+    <div class="cartBox">
+      <h2 class="cartHeading">Your Shopping Cart</h2>
+      <div class="cartSubHeading">
+        <div>Product</div>
+        <div class="cartQuantity">Quantity</div>
+        <div class="cartPrice">Price</div>
+        <br>
+      </div>
+      <div id="cart">
+        <p>No items in cart</p>
+      </div>
+      <hr>
+      <div class="cartContainer">
+        <p class="cartTotal">Total: $<span id="total">0.00</span></p>
+        <button id="redirectButton" class="shopButton" type="submit" data-action="checkout">Checkout</button>
+
+      </div>
+    </div>
+  </div>
+  <footer class="footer">
+    <div class="copy">&copy;2024 Developers<div>
+        <div class="bottom-links">
+          <div class="infomation">
+            <span id="info"><u><a href="team.html">More infomationM</a></u></span><br><br>
+            Tel : 041-2254216<br>
+            Mob : 0742523714<br>
+            E-mail : malshawanigasekara2001@gmail.com
+          </div><br>
+
+
+          <div class="editors">
+            <span><u>Page Editors</u></span><br><br>
+            <a href="Student1.html">Naduni</a><br>
+            <a href="Student2.html">Malsha</a><br>
+            <a href="Student_3.html">Pahandi</a>
+          </div>
+        </div>
+
+
+
+
+        <script src="ShopScript.js"></script>
+      </div>
+</body>
+
+</html>

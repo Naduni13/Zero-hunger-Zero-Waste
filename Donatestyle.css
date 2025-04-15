@@ -1,0 +1,90 @@
+#donatebody{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2em;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  .content {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  .donation-options,
+  .donation-information,
+  .donate-form {
+    background-color: #6a8f8fce;
+    padding: 30px;
+    border-radius: 5px;
+  }
+  
+  .donation-buttons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .donation-buttons button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .donation-buttons button:focus-visible {
+    outline: 2px solid #ccc;  /* Add outline for focused button */
+  }
+  
+  .other-amount {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .other-amount label {
+    margin-right: 10px;
+  }
+  
+  .donate-form p {
+    margin-bottom: 15px;
+    font-size: 0.8em;
+  }
+  
+  form button {
+    background-color: #4CAF50; /* Green button */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  .donation-buttons button:focus-visible {
+    background-color: green;
+    color: white;  
+  } 
+  .donation-information{
+    background-image:url(images/donate2.jpg);
+    background-repeat: no-repeat;
+    background-position: 100%;
+  } 
